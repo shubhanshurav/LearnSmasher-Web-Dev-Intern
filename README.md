@@ -1,2 +1,2 @@
-# LeaenSmasher-Web-Dev-Intern
+# LearnSmasher-Web-Dev-Intern
 
