@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ramabhadra', sans-serif;
+}
+ 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../Accordian Menu/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.accordion{
+    max-width: 700px;
+    background-color: rgb(85, 84, 84);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.accordion .AllContent{
+    position: relative;
+    margin: 20px 30px;
+    border-radius: 15px;
+}
+
+.ListNo{
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    background: crimson;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ListNo::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.7em;
+}
+
+.AllContent.active .ListNo::before{
+    content: '-';
+    font-size: 1.7em;
+}
+
+.content{
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.AllContent.active .content{
+    height: 150px;
+    padding: 17px;
+}
+
