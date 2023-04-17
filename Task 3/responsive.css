@@ -1,0 +1,28 @@
+@media only screen and (max-width: 720px) {
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    .name p{
+        font-size: 1.8rem;
+    } 
+
+    .parameter{
+        width: 100px;
+        padding: 0.4rem;
+    }  
+
+    .parameter p:first-of-type {
+        font-size:0.7rem;
+    }
+
+    .parameter p:last-of-type {
+        font-size: 0.8rem;
+    }
+
+    .user-info-container p[data-temp] {
+        font-size: 2rem;
+    }
+
+}
